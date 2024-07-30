@@ -1,0 +1,19 @@
+{{! Show the inputs and a button to create a new post --}}
+
+<div>
+ <h3>Welcome {{name}}</h3>
+
+  <form class="addNewPostForm" data-id="{{id}}"
+    <label for="PostContent">Post content:</label>
+    <input class="" type="text" default="{{content}}"id="PostContent" />
+    <button  type="submit" name="updatePost">Update Post</button>
+    <p></p>
+    <button  type="submit" name="deletePost">Delete Post</button>
+
+  </form>
+  
+</div>
+
+{{#if logged_in}}
+    <script src="/js/updatedeletepost.js"></script>
+{{/if}}

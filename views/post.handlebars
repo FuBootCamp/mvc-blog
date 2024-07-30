@@ -1,0 +1,22 @@
+<div class="">
+
+ <h2>{{loggedUser.name}}, add a comment to ... {{postUser.title}} </h2>
+ <h3> Created by {{postUser.user.name}} on {{format_date postUser.date_created}}</h3>
+ <h3>Comments...</h3>
+
+ {{#each comments as |comment| }}
+    <p>{{comment.content}}</p>
+    <p>Posted by {{comment.user.name}}</p>
+    <p>on {{format_date comment.date_created}}</p>
+{{/each}}
+
+  <form class="addNewCommentForm" data-id="{{postUser.id}}"
+    <label for="newComment">Comment:</label>
+    <input class="" type="text" id="newComment" />
+    <button  type="submit" name="newComment">Add Comment</button>
+  </form>
+</div>
+
+{{#if logged_in}}
+    <script src="/js/comment.js"></script>
+{{/if}}

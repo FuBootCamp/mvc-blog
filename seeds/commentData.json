@@ -1,0 +1,32 @@
+[
+    {
+      "content": "Great question, and pretty funny that at the time of writing all(!) 27 responses say 'no', and I can only agree."
+    },
+    {
+      "content": "There's no such thing as schemaless, in Mongo however the schema is implied and not strictly enforced."
+    },
+    {
+      "content": "Mongo is definitely not common in the corporate world and I've never encountered someone with a real job praising it."
+    },
+    {
+      "content": "In other words, whatever shape the data is you put in your mongo database is the schema"
+    },
+    {
+      "content": "If people are using Javascript/Python to build big applications then why is mongo bad and Node.js not bad with that logic?"
+    },
+    {
+      "content": "One thing I don't see mentioned here are CQRS systems. I'm using Mongo for the read side of my CQRS system."
+    },
+    {
+      "content": "Mongo is fine as a secondary data store or a prototype but SQL + Redis is still the best."
+    },
+    {
+      "content": "It's a gateway drug into the world of data storage and manipulation, but for production, SQL wins hands down every time"
+    },
+    {
+      "content": "I wouldnt discount Mongos cloud offering but its just not something that comes to mind."
+    },
+    {
+      "content": "Postgres seems to be the most popular recently from my exp., but I've also worked with companies using Microsoft, Oracle, MySQL, cockroach, etc."
+    }
+  ]

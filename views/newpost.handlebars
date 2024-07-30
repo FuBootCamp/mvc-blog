@@ -1,0 +1,18 @@
+{{! Show the inputs and a button to create a new post --}}
+
+<div>
+ <h3>Welcome {{name}}</h3>
+
+  <form class="addNewPostForm" data-id="{{id}}"
+    <label for="newPostTitle">New post tile:</label>
+    <input class="" type="text" id="newPostTitle" />
+    <label for="newPostContent">New post content:</label>
+    <input class="" type="text" id="newPostContent" />
+    <button  type="submit" name="newPost">Add Post</button>
+  </form>
+  
+</div>
+
+{{#if logged_in}}
+    <script src="/js/newpost.js"></script>
+{{/if}}

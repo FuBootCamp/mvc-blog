@@ -1,0 +1,31 @@
+
+{{!-- Use an if to show the message and button to delete a post
+just is there are at least one  --}}
+
+<div class="">
+  <h3>Welcome {{name}}</h3>
+
+  <form action="">
+      {{#if posts.length}}
+          <h3>Here your posts...</h3>
+              {{#each posts as |post| }}
+                     <a id="dashboradPostTitle"
+                     href="/updatedeletepost/{{post.id}}">{{post.title}}</a>
+                     <p></p>
+              {{/each}}
+      {{/if}}
+  </form>
+
+  <form class="addNewPostForm" data-id="{{id}}">
+      <p></p>
+      <a id="" href="/newpost">
+        <button type="button">Add Post</button>
+      </a>
+      
+  </form>
+
+</div>
+
+{{#if logged_in}}
+    <script src="/js/post.js"></script>
+{{/if}}

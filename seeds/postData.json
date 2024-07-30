@@ -1,0 +1,14 @@
+[
+  {
+    "title": "Lets talk about DB",
+    "content": "Developers looking for a dependable and well-documented ORM frequently choose Sequelize because of its extensive community and established reputation."
+  },
+  {
+    "title": " What about DOCUMENT db",
+    "content": "The best use cases for MongoDB are hierarchical databases where you never do any complicated queries besides data retrieval with key fields."
+  },
+  {
+    "title": "The future of Data Base",
+    "content": "MariaDB is intended to maintain high compatibility with MySQL, with exact matching with MySQL APIs and commands, allowing it in many cases to function as a drop-in replacement for MySQL."
+  }
+]

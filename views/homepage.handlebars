@@ -1,0 +1,16 @@
+{{!-- render all the post --}}
+
+{{#if logged_in}}        
+    {{#each posts as |post| }}      
+        <a id="homePagePostTitle" href="/post/{{post.id}}">{{post.title}}</a>
+        <p id="homePagePostTitle"> Created by {{post.user.name}} on {{format_date post.date_created}}</p>
+        <p id="homePagePostContent"> {{post.content}}</p>
+        <p></p>
+    {{/each}}
+{{else}}
+    {{#each posts as |post| }}
+        <p id="homePagePostTitle"> {{post.title}}</p>
+        <p id="homePagePostContent"> {{post.content}}</p>
+        <p></p>
+    {{/each}}
+{{/if}}
