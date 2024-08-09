@@ -1,6 +1,6 @@
 
 #
-# MVC BLOG: Tech BLOG
+# MVC BLOG: Tech - BLOG
 ######
 ![Static Badge](https://img.shields.io/badge/license_by-MIT-blue.svg)
 ###
