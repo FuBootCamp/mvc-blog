@@ -3,13 +3,13 @@
 just is there are at least one  --}}
 
 <div class="">
-  <h3>Welcome {{name}}</h3>
+  <h3 id="dashboardUserName" >Welcome {{name}}</h3>
 
   <form action="">
       {{#if posts.length}}
           <h3>Here your posts...</h3>
               {{#each posts as |post| }}
-                     <a id="dashboradPostTitle"
+                     <a id="dashboardPostTitle"
                      href="/updatedeletepost/{{post.id}}">{{post.title}}</a>
                      <p></p>
               {{/each}}
@@ -18,14 +18,14 @@ just is there are at least one  --}}
 
   <form class="addNewPostForm" data-id="{{id}}">
       <p></p>
-      <a id="" href="/newpost">
-        <button type="button">Add Post</button>
+      <a href="/newpost">
+        <button type="button" class="buttonStyle" >Add Post</button>
       </a>
       
   </form>
 
 </div>
 
-{{#if logged_in}}
+{{!-- {{#if logged_in}}
     <script src="/js/post.js"></script>
-{{/if}}
+{{/if}} --}}

@@ -3,7 +3,7 @@ const newPostHandler = async (event) => {
     event.preventDefault();
     console.log('Entrando a la funsion gotoNewPostScreen');
     const newPostTitle = document.querySelector('#newPostTitle').value.trim();
-    const newPostContent = document.querySelector('#newPostContent').value.trim();
+    const newPostContent = document.querySelector('#textAreaPostContent').value.trim();
     console.log(newPostTitle, newPostContent);
     if (newPostTitle && newPostContent) {
         const post_id = event.target.getAttribute('data-id');

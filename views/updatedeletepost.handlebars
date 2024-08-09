@@ -1,19 +1,30 @@
 {{! Show the inputs and a button to create a new post --}}
 
 <div>
- <h3>Welcome {{name}}</h3>
+ <h3 id="dashboardUserName">Welcome {{user.name}}</h3>
+ <h4 id="dashboardPostTitle"> {{title}}  </h4>
+ <p></p>
+ <p></p>
 
-  <form class="addNewPostForm" data-id="{{id}}"
-    <label for="PostContent">Post content:</label>
-    <input class="" type="text" default="{{content}}"id="PostContent" />
-    <button  type="submit" name="updatePost">Update Post</button>
+
+  <form class="updatePostForm" data-id="{{id}}">
+    <label for="PostContentUpdate">Post content:</label>
+    {{!-- <input class="" type="text" value="{{content}} "id="updatePostContent" /> --}}
+    <textarea id= "textAreaPostContent" name="textAreaPostContent"
+               >{{content}} </textarea>
+
+    <button  class="buttonStyle" type="submit" name="updatePost">Update Post</button>
     <p></p>
-    <button  type="submit" name="deletePost">Delete Post</button>
 
+  </form>
+
+  <form class="deletePostForm" data-id="{{id}}">
+        <p>Or if you prefer... </p>
+        <button class="buttonStyle" type="submit" name="deletePost">Delete Post</button>
   </form>
   
 </div>
 
 {{#if logged_in}}
-    <script src="/js/updatedeletepost.js"></script>
+    <script src="/js/post.js"></script>
 {{/if}}
